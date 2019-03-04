@@ -5,12 +5,15 @@ h1.innerText = "De-mystifying Redux!";
 document.getElementById("app").prepend(h1);
 
 var countLabel = document.getElementById("countLabel");
+
+// precompiled UMD package that defines a window.Redux global variable
+// https://unpkg.com/redux@4.0.1/dist/redux.js
 var Redux = window.Redux;
 
 // Event handlers
 
 document.getElementById("upvote").addEventListener("click", function() {
-	store.dispatch({ type: "INCREMENT" });
+	store.dispatch({ typse: "INCREMENT" });
 });
 
 document.getElementById("downvote").addEventListener("click", function() {
